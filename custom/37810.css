@@ -1,0 +1,176 @@
+/*
+-------------------
+Custom Theme Styles
+-------------------
+*/
+h1 {
+	font-family: Oswald, sans-serif; font-weight: 700; color: #2E2633; font-size: 94px;
+}
+	h1 img {
+		max-width: 100%;
+	}
+h2, h3 {
+	font-family: Cabin, sans-serif; font-weight: 700; color: #acd372;
+}
+h2 {
+	font-size: 52px;
+}
+body {
+	color: #000000; font-family: Cabin, sans-serif; font-weight: 400; font-size: 17px;
+	background-color: #ffffff; background-image: url('');
+	background-repeat: no-repeat; background-attachment: fixed;
+	background-size: center; -moz-background-size: center; -webkit-background-size: center;
+}
+	article {
+		background-color: rgba(255, 255, 255, 1.0);
+		width: 450px;
+		/*float: none;*/ 
+	}
+
+
+/*
+--------------
+MOBILE STYLES
+--------------
+*/
+
+/* Computer and Mobile, decrement 1 */
+@media screen and (max-width: 1024px) { /* When browser shrinks to 1024 */
+	html, body {
+		font-size: 18px;
+		min-width: 0;
+	}
+	h1 {
+		font-size: 92px;
+	}
+	h2 {
+		font-size: 44px;
+	}
+	article {
+		width: auto; margin: 30px;
+		float: none;
+	}
+	
+	.main_content, .page_wide .main_content {
+		width: 64%;
+	}
+	.sidebar, .page_wide .sidebar {
+		width: 33%
+	}
+}
+
+/* Computer and Mobile, decrement 2 */
+@media screen and (max-width: 768px) { /* When browser shrinks to 768px */
+	html, body {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 105px;
+	}
+	h2 {
+		font-size: 55px;
+	}
+	.main_content, .sidebar, .page_wide .main_content, .page_wide .sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/* iPhones and iPads */
+@media screen and (max-device-width: 1024px) {
+	html, body {
+		font-size: 15px;
+		min-width: 0;
+	}
+	h1 {
+		font-size: 52px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	article {
+		width: auto; margin: 15px; padding: 15px;
+		float: none;
+	}
+	.main_content, .sidebar {
+		width: auto;
+		float: none;
+	}
+		.newsletters input[type="text"], input[type="text"], input[type="password"], textarea.onepager_input {
+			width: 95%; max-width: none; height: auto; margin-right: 0; margin-bottom: 10px;
+		}
+			textarea.onepager_input {
+				height: 150px;
+			}
+			
+		.fb_reset {
+			display: none; !important; /* This was causing extra left/right scrolling */
+		}
+}
+
+/* iPhones and iPads landscape */
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+	.image_gallery li img {
+		height: 250px;
+	}
+}
+
+/* iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	html, body {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 92px;
+	}
+	h2 {
+		font-size: 57px;
+	}
+	article {
+		margin: 30px; padding: 30px;
+	}
+		.image_gallery li img {
+			height: auto;
+		}
+}
+
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	.newsletters input[type="text"], input[type="text"], input[type="password"], textarea.onepager_input {
+		width: 55%; margin-bottom: 0;
+	}
+		textarea.onepager_input {
+			width: 75%;
+		}
+}
+
+/* iPad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.main_content {
+		width: 64%;
+		float: left;
+	}
+		.main_content .newsletters input[type="text"], input[type="text"], input[type="password"], textarea.onepager_input {
+			width: 55%; margin-bottom: 0;
+		}
+			.main_content textarea.onepager_input {
+				width: 75%;
+			}
+	.sidebar {
+		width: 33%;
+		float: right;
+	}
+}
+
+
+/*
+-------------------
+Custom CSS Setting
+-------------------
+*/
+h3 { text-align: center; }
+p { text-align: center; }
+header { text-align: center; }
+.onepager_submit, .call_to_action_button { background: rgb(172, 211, 114); text-shadow: none; box-shadow: none; padding: 7px 10px; }
+.onepager_submit:active { padding: 7px 10px; }
+section.buttons { text-align: center; }
